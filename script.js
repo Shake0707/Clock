@@ -66,6 +66,7 @@ document.querySelector('.stopwatch__btn').addEventListener('click', () => {
 
 document.querySelector('.stopwatch__stop').addEventListener('click', () => {
     if (secundsSt > 1) {
+        started = true;
         stopTime();
         activeSpan.classList.remove('active');
         activeSpan.classList.add('active_clear');
@@ -73,6 +74,7 @@ document.querySelector('.stopwatch__stop').addEventListener('click', () => {
 })
 
 document.querySelector('.stopwatch__recet').addEventListener('click', () => {
+    started = true;
     recetTime();
     activeSpan.classList.remove('active');
     activeSpan.classList.remove('active_clear');
